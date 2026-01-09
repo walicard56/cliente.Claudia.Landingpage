@@ -1,26 +1,68 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lexend Mega", Sans-serif;
+    font-family: "Lexend Mega", sans-serif;
 }
 
 .header {
+    position: relative;
+    min-height: 100vh;
     background-image: url("head.webp");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
+/* Overlay escuro */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Conteúdo centralizado */
 .header-inter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Caixa da logo */
+.logo-box {
+    background: rgb(255 255 255 / 86%);
+    margin: 20px;
+    padding: 30px 20px;
+    border-radius: 100%;
+    backdrop-filter: blur(1px);
+}
+
+.logo-box img {
+    width: 180px;
+    filter: drop-shadow(0 6px 15px rgba(0,0,0,0.4));
+}
+
+/* Texto */
+.txt p {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 
 .sell{
-    background-color: #116b40;
+    background-color: #1ca563;
 }
 
 
@@ -215,7 +257,7 @@ body{
     /* ===== SECTION SELL ===== */
     .sell {
         padding: 80px 10px;
-        background: #116b40;
+        background: #1ca563;
     }
 
     .sell .container {
@@ -229,7 +271,7 @@ body{
         margin-bottom: 60px;
         font-family: "Lexend Mega", Sans-serif;
         font-weight: 300;
-        color: #ecb361;
+        color: #f9af46;
     }
 
     /* ===== CARD ===== */
@@ -307,7 +349,7 @@ body{
 
     /* ===== PRICE ===== */
     .price {
-    margin: 10px 20px;
+    margin: 10px 10px;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -315,7 +357,7 @@ body{
     }
 
     .price-divid{
-    margin: 10px 20px;
+    margin: 10px 10px;
     text-align: center;
     font-size: 18px;
     }
