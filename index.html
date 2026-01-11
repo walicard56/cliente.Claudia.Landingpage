@@ -8,23 +8,21 @@
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="overlay"></div>
-
-    <div class="container">
-        <div class="header-inter">
-            <div class="logo-box">
-                <img src="/style/logo.png" alt="logo">
-            </div>
-
-            <div class="txt">
-                <p>CESTAS DE CAFÉ DA MANHÃ E PRESENTES AFETIVOS</p>
-                <br>
-                <p>SÃO BERNARDO DO CAMPO</p>
+    <header class="header reveal">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-inter">
+                <div class="logo-box">
+                    <img src="/style/logo.png" alt="logo">
+                </div>
+                <div class="txt">
+                    <p>CESTAS DE CAFÉ DA MANHÃ E PRESENTES AFETIVOS</p>
+                    <br>
+                    <p>SÃO BERNARDO DO CAMPO</p>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
 
     <section class="sell">
@@ -258,6 +256,80 @@
 
 
 
+    <section class="testimonials">
+        <h2>
+            AMOR EM CADA ENTREGA:<br>
+            O QUE NOSSOS CLIENTES DIZEM
+        </h2>
+
+        <div class="rating">
+            <h3>EXCELENTE</h3>
+            <div class="stars">★★★★★</div>
+            <p>Com base em 69 avaliações</p>
+            <img src="/style/google.png" alt="Google">
+        </div>
+
+        <!-- CARROSSEL DE IMAGENS -->
+        <div class="carousel">
+            <div class="carousel-track">
+            <img src="/style/comentarios/Elogio 1 .jpg" alt="Comentário 1">
+            <img src="/style/comentarios/Elogio 3.jpg" alt="Comentário 3">
+            <img src="/style/comentarios/Elogio 4.jpg" alt="Comentário 4">
+            <img src="/style/comentarios/Elogio 5.jpg" alt="Comentário 5">
+            <img src="/style/comentarios/Elogio 6.jpg" alt="Comentário 6">
+            <img src="/style/comentarios/Elogio 7.jpg" alt="Comentário 7">
+            <img src="/style/comentarios/Elogio 8.jpg" alt="Comentário 8">
+            <img src="/style/comentarios/Elogio 9.jpg" alt="Comentário 9">
+            <img src="/style/comentarios/Elogio 10.jpg" alt="Comentário 10">
+            <img src="/style/comentarios/Elogio 11.jpg" alt="Comentário 11">
+            <img src="/style/comentarios/Elogio 12.jpg" alt="Comentário 12">
+            <img src="/style/comentarios/Elogio 13 .jpg" alt="Comentário 13">
+            <img src="/style/comentarios/Elogio 14.jpg" alt="Comentário 14">
+            <img src="/style/comentarios/Elogio 15.jpg" alt="Comentário 15">
+            <img src="/style/comentarios/Elogio 16.jpg" alt="Comentário 16">
+            <img src="/style/comentarios/Elogio 17.jpg" alt="Comentário 17">
+            <img src="/style/comentarios/Elogio 18.jpg" alt="Comentário 18">
+            <img src="/style/comentarios/Elogio 19.jpg" alt="Comentário 19">
+            <img src="/style/comentarios/Elogio 20.jpg" alt="Comentário 20">
+            <img src="/style/comentarios/Elogio 21.jpg" alt="Comentário 21">
+            <img src="/style/comentarios/Elogio 22.jpg" alt="Comentário 22">
+            <img src="/style/comentarios/Elogio 23.jpg" alt="Comentário 23">
+            <img src="/style/comentarios/Elogio 24.jpg" alt="Comentário 24">
+
+
+            <!-- duplicação para loop infinito -->
+            <img src="/style/comentarios/Elogio 1 .jpg" alt="Comentário 1">
+            <img src="/style/comentarios/Elogio 3.jpg" alt="Comentário 3">
+            <img src="/style/comentarios/Elogio 4.jpg" alt="Comentário 4">
+            <img src="/style/comentarios/Elogio 5.jpg" alt="Comentário 5">
+            <img src="/style/comentarios/Elogio 6.jpg" alt="Comentário 6">
+            <img src="/style/comentarios/Elogio 7.jpg" alt="Comentário 7">
+            <img src="/style/comentarios/Elogio 8.jpg" alt="Comentário 8">
+            <img src="/style/comentarios/Elogio 9.jpg" alt="Comentário 9">
+            <img src="/style/comentarios/Elogio 10.jpg" alt="Comentário 10">
+            <img src="/style/comentarios/Elogio 11.jpg" alt="Comentário 11">
+            <img src="/style/comentarios/Elogio 12.jpg" alt="Comentário 12">
+            <img src="/style/comentarios/Elogio 13 .jpg" alt="Comentário 13">
+            <img src="/style/comentarios/Elogio 14.jpg" alt="Comentário 14">
+            <img src="/style/comentarios/Elogio 15.jpg" alt="Comentário 15">
+            <img src="/style/comentarios/Elogio 16.jpg" alt="Comentário 16">
+            <img src="/style/comentarios/Elogio 17.jpg" alt="Comentário 17">
+            <img src="/style/comentarios/Elogio 18.jpg" alt="Comentário 18">
+            <img src="/style/comentarios/Elogio 19.jpg" alt="Comentário 19">
+            <img src="/style/comentarios/Elogio 20.jpg" alt="Comentário 20">
+            <img src="/style/comentarios/Elogio 21.jpg" alt="Comentário 21">
+            <img src="/style/comentarios/Elogio 22.jpg" alt="Comentário 22">
+            <img src="/style/comentarios/Elogio 23.jpg" alt="Comentário 23">
+            <img src="/style/comentarios/Elogio 24.jpg" alt="Comentário 24">
+            </div>
+        </div>
+
+        <div class="certified">
+            Certificado: Trustindex ✓
+        </div>
+    </section>
+
+
     <footer class="footer">
     <div class="footer-container">
 
@@ -295,4 +367,24 @@
     </footer>
 
 </body>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target); // anima só uma vez
+        }
+      });
+    },
+    {
+      threshold: 0.15
+    }
+  );
+
+  reveals.forEach((reveal) => observer.observe(reveal));
+</script>
 </html>
