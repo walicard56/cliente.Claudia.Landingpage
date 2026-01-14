@@ -8,18 +8,10 @@ body {
 .header {
     position: relative;
     min-height: 100vh;
-    background-image: url("head.webp");
+    background-image: url("download.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* Overlay escuro */
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 1;
 }
 
 .container {
@@ -42,6 +34,7 @@ body {
 
 
 .logo-box img {
+    filter: brightness(110%) contrast(110%);
     width: 500px;
 }
 
@@ -298,7 +291,7 @@ body {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .header {
-        background-image: url("head.webp");
+        background-image: url("download.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; 
