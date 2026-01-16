@@ -179,6 +179,7 @@ body {
 }
 
 .buy-btn {
+  text-align: center;
   background: #ecb361;
   padding: 16px 50px;
   font-size: 1.1rem;
