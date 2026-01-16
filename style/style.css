@@ -179,12 +179,20 @@ body {
 }
 
 .buy-btn {
-  background:#ecb361;
-  border: none;
+  background: #ecb361;
   padding: 16px 50px;
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
+
+  /* remove estilo padrão do link */
+  text-decoration: none;
+
+  /* faz o <a> se comportar como botão */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -195,6 +203,12 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(230, 57, 70, 0.45);
 }
+
+/* garante que a cor não mude após clicar */
+.buy-btn:visited {
+  color: #fff;
+}
+
 
 
 .testimonials {
@@ -291,7 +305,7 @@ body {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .header {
-        background-image: url("download.jpg");
+        background-image: url("head.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; 
