@@ -8,7 +8,7 @@ body {
 .header {
     position: relative;
     min-height: 100vh;
-    background-image: url("download.jpg");
+    background-image: url("head.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
